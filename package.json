@@ -1,0 +1,42 @@
+{
+  "name": "award-winning-portfolio",
+  "version": "1.0.0",
+  "description": "An Awwwards-winning developer portfolio built with React, Framer Motion, Tailwind CSS, and Three.js",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "framer-motion": "^10.16.4",
+    "three": "^r156",
+    "react-three-fiber": "^8.13.5",
+    "drei": "^9.88.3",
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "react-scroll": "^1.9.0",
+    "zustand": "^4.4.1",
+    "clsx": "^2.0.0",
+    "tailwind-merge": "^2.2.0",
+    "lucide-react": "^0.292.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "@types/three": "^r156.0.2",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}
