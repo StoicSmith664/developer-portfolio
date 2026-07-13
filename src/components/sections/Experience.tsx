@@ -70,10 +70,8 @@ const Experience: React.FC = () => {
           whileInView="visible"
           className="relative"
         >
-          {/* Timeline line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-accent-secondary to-transparent" />
 
-          {/* Experience items */}
           <div className="space-y-8 md:space-y-12">
             {experiences.map((exp, idx) => (
               <motion.div
@@ -81,7 +79,6 @@ const Experience: React.FC = () => {
                 variants={itemVariants}
                 className={`relative pl-12 md:pl-0 ${idx % 2 === 0 ? 'md:pr-1/2' : 'md:ml-1/2 md:pl-12'}`}
               >
-                {/* Timeline dot */}
                 <div className="absolute left-0 top-0 w-8 h-8 bg-dark border-2 border-accent rounded-full flex items-center justify-center md:left-1/2 md:-translate-x-1/2">
                   <div className="w-3 h-3 bg-accent rounded-full" />
                 </div>

@@ -81,24 +81,20 @@ const Blog: React.FC = () => {
               whileHover={{ y: -10 }}
               className="glass p-6 rounded-lg flex flex-col group cursor-pointer"
             >
-              {/* Category */}
               <div className="mb-4">
                 <span className="text-xs px-3 py-1 bg-accent/20 border border-accent/50 rounded-full text-accent font-medium">
                   {post.category}
                 </span>
               </div>
 
-              {/* Title */}
               <h3 className="text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors">
                 {post.title}
               </h3>
 
-              {/* Excerpt */}
               <p className="text-text-secondary text-sm mb-4 flex-grow line-clamp-2">
                 {post.excerpt}
               </p>
 
-              {/* Meta */}
               <div className="flex items-center gap-4 text-xs text-text-secondary mb-4 pt-4 border-t border-accent/10">
                 <div className="flex items-center gap-1">
                   <Calendar size={14} />
@@ -110,7 +106,6 @@ const Blog: React.FC = () => {
                 </div>
               </div>
 
-              {/* Read more link */}
               <motion.a
                 href={`#blog/${post.slug}`}
                 whileHover={{ x: 5 }}

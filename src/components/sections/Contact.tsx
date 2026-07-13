@@ -77,7 +77,6 @@ const Contact: React.FC = () => {
           whileInView="visible"
           className="grid md:grid-cols-2 gap-12 items-center"
         >
-          {/* Contact form */}
           <motion.form
             variants={itemVariants}
             onSubmit={handleSubmit}
@@ -141,7 +140,6 @@ const Contact: React.FC = () => {
             </motion.button>
           </motion.form>
 
-          {/* Contact info */}
           <motion.div variants={itemVariants} className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-text-primary mb-4">Let's Connect</h3>
@@ -150,7 +148,6 @@ const Contact: React.FC = () => {
               </p>
             </div>
 
-            {/* Social links */}
             <div>
               <h4 className="text-lg font-semibold text-text-primary mb-4">Follow Me</h4>
               <div className="flex gap-4">
@@ -174,7 +171,6 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick contact */}
             <div className="glass p-6 rounded-lg border border-accent/20">
               <p className="text-sm text-text-secondary mb-2">Email me at:</p>
               <a

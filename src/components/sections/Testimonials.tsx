@@ -81,19 +81,16 @@ const Testimonials: React.FC = () => {
               whileHover={{ y: -5 }}
               className="glass p-6 rounded-lg flex flex-col"
             >
-              {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} size={16} className="fill-accent text-accent" />
                 ))}
               </div>
 
-              {/* Quote */}
               <p className="text-text-secondary mb-6 flex-grow italic">
                 "{testimonial.text}"
               </p>
 
-              {/* Author */}
               <div className="flex items-center gap-3 pt-4 border-t border-accent/10">
                 <div className="text-3xl">{testimonial.avatar}</div>
                 <div>

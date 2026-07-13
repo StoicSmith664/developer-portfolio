@@ -108,7 +108,6 @@ const Projects: React.FC = () => {
               whileHover={{ y: -10 }}
               className="group glass rounded-lg overflow-hidden cursor-pointer"
             >
-              {/* Project image */}
               <div className={`relative w-full h-40 ${project.image} overflow-hidden`}>
                 <motion.div
                   whileHover={{ scale: 1.1 }}
@@ -116,7 +115,6 @@ const Projects: React.FC = () => {
                 />
               </div>
 
-              {/* Project content */}
               <div className="p-6">
                 <h3 className="text-lg font-bold text-text-primary mb-2 group-hover:text-accent transition-colors">
                   {project.title}
@@ -125,7 +123,6 @@ const Projects: React.FC = () => {
                   {project.description}
                 </p>
 
-                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
                     <span key={idx} className="text-xs px-2 py-1 bg-accent/10 border border-accent/30 rounded text-accent">
@@ -134,7 +131,6 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
 
-                {/* Links */}
                 <div className="flex gap-2 pt-4 border-t border-accent/10">
                   <motion.a
                     href={project.link}
